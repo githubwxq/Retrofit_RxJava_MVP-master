@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 
 /**
  * by y on 2016/4/28.
+ * 抽象按抽象
  */
 @SuppressWarnings("ALL")
 public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -96,7 +97,7 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Re
         return mDatas;
     }
 
-    public interface OnItemClickListener<T> {
+    public interface OnItemClickListener<T> {//联系在一起的接口放一起
 
         void onItemClick(View view, int position, T info);
 

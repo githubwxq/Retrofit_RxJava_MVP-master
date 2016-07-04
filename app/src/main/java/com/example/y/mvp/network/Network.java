@@ -17,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * by y on 2016/4/28.
+ * 实现方法进行管理
  */
 class Network {
 

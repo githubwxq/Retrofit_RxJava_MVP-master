@@ -76,7 +76,7 @@ public class ImageDetailActivity extends BaseActivity
 
     private void init() {
         imageDetailPresenter = new ImageDetailPresenterImpl(this);
-        toolBarItemPresenter = new ToolBarItemPresenterImpl(this);
+        toolBarItemPresenter = new ToolBarItemPresenterImpl(this); //又把回调接口传进去了 为了拿到
         list = new LinkedList<>();
         imageDetailPresenter.requestNetWork(id);
         bigImageAdapter = new ImageDetailAdapter(list);
@@ -84,7 +84,7 @@ public class ImageDetailActivity extends BaseActivity
         toolBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                toolBarItemPresenter.switchId(item.getItemId());
+                toolBarItemPresenter.switchId(item.getItemId());//切换 如何切换呢
                 return true;
             }
         });

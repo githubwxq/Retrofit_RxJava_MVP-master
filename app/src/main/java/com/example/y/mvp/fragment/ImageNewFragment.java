@@ -86,6 +86,7 @@ public class ImageNewFragment extends BaseFragment implements BaseView.ImageNewV
 
     @Override
     public void setData(List<ImageNewInfo> datas) {
+        //拿到present中的数据
         if (!datas.isEmpty()) {
             adapter.addAll(datas);
         }

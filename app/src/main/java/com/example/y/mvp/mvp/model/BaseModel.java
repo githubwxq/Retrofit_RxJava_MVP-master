@@ -31,7 +31,7 @@ public interface BaseModel<T> {
         void netWorkList(int id, int page, BaseDataBridge.ImageListData imageListData);
     }
 
-    interface ImageDetailModel {
+    interface ImageDetailModel {  //h获取详情
         void netWorkDetail(int id, BaseDataBridge.ImageDetailData imageDetailData);
     }
 

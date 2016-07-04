@@ -32,6 +32,7 @@ public class ImageListPresenterImpl extends BasePresenterImpl<BaseView.ImageList
                 view.showFoot();
             }
         }
+        //开始访问数据 然后add date被回调
         imageListModel.netWorkList(id, page, this);
     }
 

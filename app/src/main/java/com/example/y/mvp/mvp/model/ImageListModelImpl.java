@@ -7,6 +7,7 @@ import com.example.y.mvp.network.NetWorkRequest;
 
 /**
  * by y on 2016/4/28.
+ * 需要不同回调的处理然后就要分开实现model 虽然是同一个对象的处理
  */
 public class ImageListModelImpl implements BaseModel.ImageListModel {
 

@@ -15,7 +15,7 @@ public class ToolBarItemPresenterImpl extends BasePresenterImpl<BaseView.ToolBar
 
 
     @Override
-    public void switchId(int id) {
+    public void switchId(int id) {  //真正切换 view
         switch (id) {
             case R.id.toolbar_item_share:
                 view.switchShare();

@@ -10,6 +10,7 @@ import rx.Observable;
 
 /**
  * by y on 2016/5/30.
+ * dao成
  */
 public interface BaiDuApi {
 

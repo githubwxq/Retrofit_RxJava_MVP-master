@@ -33,7 +33,7 @@ public class ImageMainFragment extends BaseFragment implements SwipeRefreshLayou
     private boolean isPrepared;
     private boolean isLoad;
     private ImageListAdapter adapter;
-    private BasePresenter.ImageListPresenter imageListPresenter;
+    private BasePresenter.ImageListPresenter imageListPresenter;//实现这个接口的实现类
 
     public static ImageMainFragment newInstance(int index) {
         Bundle bundle = new Bundle();
@@ -62,7 +62,7 @@ public class ImageMainFragment extends BaseFragment implements SwipeRefreshLayou
             return;
         }
 
-        imageListPresenter = new ImageListPresenterImpl(this);
+        imageListPresenter = new ImageListPresenterImpl(this); // this 回调函数数据结束后 更新当前页面 在present中有activity的
 
         LinkedList<ImageListInfo> list = new LinkedList<>();
 
